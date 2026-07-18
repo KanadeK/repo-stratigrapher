@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Repo Stratigrapher interface screenshot">
+  <rect width="1280" height="720" fill="#f6f8f7"/>
+  <rect x="64" y="56" width="1152" height="608" rx="8" fill="#ffffff" stroke="#d9e1dc"/>
+  <text x="104" y="122" fill="#0a5963" font-family="Arial, sans-serif" font-size="18" font-weight="700">Repo Stratigrapher</text>
+  <text x="104" y="190" fill="#182024" font-family="Arial, sans-serif" font-size="50" font-weight="800">Interactive code stratigraphy</text>
+  <rect x="104" y="250" width="210" height="46" rx="8" fill="#0a5963"/>
+  <text x="128" y="280" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="700">Import report.json</text>
+  <rect x="104" y="340" width="720" height="252" rx="8" fill="#f6f8f7" stroke="#d9e1dc"/>
+  <text x="132" y="386" fill="#182024" font-family="Arial, sans-serif" font-size="22" font-weight="800">Hotspot Ranking</text>
+  <text x="132" y="438" fill="#0a5963" font-family="Consolas, monospace" font-size="18" font-weight="700">src/payments/ledger.ts</text>
+  <text x="132" y="486" fill="#0a5963" font-family="Consolas, monospace" font-size="18" font-weight="700">src/payments/reconcile.ts</text>
+  <text x="132" y="534" fill="#0a5963" font-family="Consolas, monospace" font-size="18" font-weight="700">src/api/routes.ts</text>
+  <rect x="872" y="250" width="276" height="78" rx="8" fill="#f6f8f7" stroke="#d9e1dc"/>
+  <text x="904" y="298" fill="#182024" font-family="Arial, sans-serif" font-size="30" font-weight="800">24 commits</text>
+  <rect x="872" y="352" width="276" height="78" rx="8" fill="#f6f8f7" stroke="#d9e1dc"/>
+  <text x="904" y="400" fill="#182024" font-family="Arial, sans-serif" font-size="30" font-weight="800">3 renames</text>
+  <rect x="872" y="454" width="276" height="78" rx="8" fill="#f6f8f7" stroke="#d9e1dc"/>
+  <text x="904" y="502" fill="#182024" font-family="Arial, sans-serif" font-size="30" font-weight="800">10 hotspots</text>
+</svg>

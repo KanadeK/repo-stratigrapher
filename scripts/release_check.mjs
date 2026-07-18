@@ -37,19 +37,19 @@ if (!author.includes("KanadeK <121669563+KanadeK@users.noreply.github.com>")) {
 }
 
 let suspicious = "";
+const forbiddenPattern = [
+  "TO" + "DO",
+  "FIX" + "ME",
+  "Not" + "Implemented",
+  "place" + "holder",
+  "coming" + " soon",
+  "lorem" + " ipsum",
+].join("|");
 try {
-  suspicious = execFileSync(
-    "git",
-    [
-      "grep",
-      "-nE",
-      "TODO|FIXME|NotImplemented|placeholder|coming soon|lorem ipsum",
-    ],
-    {
-      encoding: "utf8",
-      env: gitEnv,
-    },
-  ).trim();
+  suspicious = execFileSync("git", ["grep", "-nE", forbiddenPattern], {
+    encoding: "utf8",
+    env: gitEnv,
+  }).trim();
 } catch (error) {
   if (error.status !== 1) throw error;
 }

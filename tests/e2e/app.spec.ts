@@ -14,7 +14,7 @@ test("shows sample hotspots and exports reports", async ({ page }) => {
 
 test("filters paths and switches to reading route", async ({ page }) => {
   await page.goto("/");
-  await page.getByPlaceholder("Filter by path").fill("routes");
+  await page.getByLabel("Filter by path").fill("routes");
   await expect(page.getByText("src/api/routes.ts")).toBeVisible();
   await expect(page.getByText("src/payments/ledger.ts")).toHaveCount(0);
   await page.getByRole("button", { name: "route" }).click();

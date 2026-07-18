@@ -34,7 +34,7 @@ function zipDirectory(zipName) {
       [
         "-NoProfile",
         "-Command",
-        `Compress-Archive -LiteralPath dist\\* -DestinationPath ${destination} -Force`,
+        `Compress-Archive -Path dist\\* -DestinationPath ${destination} -Force`,
       ],
       { stdio: "inherit" },
     );

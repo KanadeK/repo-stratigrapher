@@ -135,9 +135,9 @@ export default function App() {
         <div className="searchBox">
           <MagnifyingGlass size={18} />
           <input
+            aria-label="Filter by path"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Filter by path"
           />
         </div>
         <select

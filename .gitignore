@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-demo/
+dist-release/
+coverage/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.tsbuildinfo
+examples/fixture-repo/

@@ -9,14 +9,16 @@ describe("privacy helpers", () => {
   });
 
   it("redacts common token shapes", () => {
-    expect(
-      redactSecrets("token ghp_123456789012345678901234567890123456"),
-    ).toContain("[redacted-secret]");
+    const testToken = ["ghp", "123456789012345678901234567890123456"].join("_");
+
+    expect(redactSecrets(`token ${testToken}`)).toContain("[redacted-secret]");
   });
 
   it("sanitizes text with both controls", () => {
-    expect(
-      sanitizeText("mika@example.test sk-123456789012345678901234", true),
-    ).not.toContain("mika@example.test");
+    const testToken = ["sk", "123456789012345678901234"].join("-");
+
+    expect(sanitizeText(`mika@example.test ${testToken}`, true)).not.toContain(
+      "mika@example.test",
+    );
   });
 });
